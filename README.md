@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi, I'm Lowic! Welcome to my code warehouse! 👋
 
 <!--
 **logic-fabric/logic-fabric** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
