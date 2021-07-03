@@ -1,0 +1,14 @@
+.banner {
+  padding: $grid-3 $grid-4;
+
+  background: $primary-100;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h2 {
+    color: $tonic-500;
+  }
+}

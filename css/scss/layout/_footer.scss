@@ -1,0 +1,17 @@
+footer {
+  padding: $grid-3 $grid-4;
+
+  background: $primary-900;
+
+  .footer-content {
+    @include small-wrapper;
+
+    @media (min-width: $small-breakpoint) {
+      @include medium-wrapper;
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      @include large-wrapper;
+    }
+  }
+}

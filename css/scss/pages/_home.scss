@@ -1,0 +1,27 @@
+.home-content {
+  h1,
+  h2 {
+    margin: $grid-3 0;
+    text-align: center;
+  }
+
+  h1 span {
+    color: $tonic-500;
+  }
+
+  h2 span {
+    color: $primary-500;
+  }
+
+  section {
+    @include small-wrapper;
+
+    @media (min-width: $small-breakpoint) {
+      @include medium-wrapper;
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      @include large-wrapper;
+    }
+  }
+}

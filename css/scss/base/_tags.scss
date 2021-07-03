@@ -35,6 +35,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: $primary-500;
   font-family: $font-title;
 }
 
@@ -44,6 +45,10 @@ h1 {
 
 h2 {
   font-size: $h2-size;
+
+  &:first-letter {
+    color: $tonic-500;
+  }
 }
 
 h3 {
@@ -60,20 +65,6 @@ h5 {
 
 h6 {
   font-size: $h6-size;
-}
-
-footer,
-header,
-main {
-  @include small-wrapper;
-
-  @media (min-width: $small-breakpoint) {
-    @include medium-wrapper;
-  }
-
-  @media (min-width: $medium-breakpoint) {
-    @include large-wrapper;
-  }
 }
 
 ul {
