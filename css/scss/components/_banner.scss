@@ -21,6 +21,7 @@
 
 .banner__bg-img {
   position: absolute;
+  top: $grid-4;
   right: $grid-4;
 
   @media (prefers-reduced-motion: no-preference) {
@@ -63,7 +64,7 @@
     img {
       border-radius: 50%;
 
-      background: $tonic-500;
+      background: linear-gradient(135deg, $tonic-500, $tonic-300);
     }
   }
 

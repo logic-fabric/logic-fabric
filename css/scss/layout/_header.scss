@@ -1,5 +1,9 @@
 header {
-  padding: $grid-3 $grid-4;
+  position: sticky;
+  top: 0;
+  z-index: $z-header-footer;
+  
+  padding: $grid-2 $grid-4;
 
   background: $primary-700;
 
@@ -12,6 +16,11 @@ header {
 
     @media (min-width: $medium-breakpoint) {
       @include large-wrapper;
+    }
+
+    p {
+      color: $primary-100;
+      font-size: $h4-size;
     }
   }
 }
