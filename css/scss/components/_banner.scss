@@ -1,14 +1,98 @@
 .banner {
-  padding: $grid-3 $grid-4;
+  height: 28rem;
+  overflow: hidden;
 
-  background: $primary-100;
+  background: linear-gradient(135deg, $primary-300, $tonic-100);
+}
 
-  h1,
-  h2 {
-    text-align: center;
+.banner__content-wrapper {
+  position: relative;
+
+  @include small-wrapper;
+
+  @media (min-width: $small-breakpoint) {
+    @include medium-wrapper;
   }
 
-  h2 {
-    color: $tonic-500;
+  @media (min-width: $medium-breakpoint) {
+    @include large-wrapper;
+  }
+}
+
+.banner__bg-img {
+  position: absolute;
+  right: $grid-4;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: Create-React-App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes Create-React-App-logo-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  top: $grid-4;
+  z-index: $z-in-front;
+
+  width: calc(100% - 8rem);
+  border: $grid-xs solid rgba(255, 2555, 255, 0.2);
+  border-radius: $grid-2;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(0.5rem);
+
+  &__cover {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: $grid-3;
+
+    img {
+      border-radius: 50%;
+
+      background: $tonic-500;
+    }
+  }
+
+  &__infos {
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: $grid-3 $grid-4;
+
+    h1,
+    h2 {
+      margin: $grid-xs 0;
+    }
+
+    h1 span {
+      color: $tonic-500;
+    }
+
+    h2 {
+      color: $tonic-500;
+      font-family: $font-text;
+      font-size: 2.25 * $grid-2;
+      font-weight: 500;
+
+      span {
+        color: $primary-700;
+      }
+    }
   }
 }

@@ -6,7 +6,7 @@
   <title>lowic mangin, développeur React.js</title>
   <meta
     name="description"
-    content="Hello, je suis Lowic, développeur Front-end spécialisé en React et basé en région parisienne. Mes technos principales sont HTML, CSS, JavaScript, React.js, Sass, Bootstrap, Materialize CSS, Tailwind CSS et Git."
+    content="Hello, je suis Lowic, développeur Front-end spécialisé en React et basé en région parisienne. Mes technos principales sont HTML, CSS, JavaScript, React.js, Redux, Sass, Tailwind CSS, Materialize CSS, Bootstrap et Git."
   />
   <meta name="author" content="Lowic Mangin" />
 
@@ -21,7 +21,7 @@
   <meta property="og:image" content="./img/site-preview.png" />
   <meta
     property="og:description"
-    content="Hello, je suis Lowic, développeur Front-end spécialisé en React et basé en région parisienne. Mes technos principales sont HTML, CSS, JavaScript, React.js, Sass, Bootstrap, Materialize CSS, Tailwind CSS et Git."
+    content="Hello, je suis Lowic, développeur Front-end spécialisé en React et basé en région parisienne. Mes technos principales sont HTML, CSS, JavaScript, React.js, Redux, Sass, Tailwind CSS, Materialize CSS, Bootstrap et Git."
   />
 
   <meta name="twitter:title" content="Lowic Mangin | Développeur Front-end" />
@@ -29,7 +29,7 @@
   <meta name="twitter:image" content="./img/site-preview.png" />
   <meta
     name="twitter:description"
-    content="Hello, je suis Lowic, développeur Front-end spécialisé en React et basé en région parisienne. Mes technos principales sont HTML, CSS, JavaScript, React.js, Sass, Bootstrap, Materialize CSS, Tailwind CSS et Git."
+    content="Hello, je suis Lowic, développeur Front-end spécialisé en React et basé en région parisienne. Mes technos principales sont HTML, CSS, JavaScript, React.js, Redux, Sass, Tailwind CSS, Materialize CSS, Bootstrap et Git."
   />
 
   <!-- Favicon: -->
@@ -56,23 +56,47 @@
 
     <main class="home-content">
       <div class="banner">
-        <h1>l<span>o</span>wic mangin</h1>
-        <h2>
-          développeur front-end <span>|</span> react.js
-        </h2>
+        <div class="banner__content-wrapper">
+          <img
+            class="banner__bg-img"
+            src="img/logo-react.png"
+            alt="React.js"
+            with="512"
+            height="512"
+          />
+
+          <div class="hero-card">
+            <div class="hero-card__cover">
+              <img
+                src="img/lowic-mangin-no-bg.png"
+                alt="Lowic Mangin"
+                width="256"
+                height="256"
+              />
+            </div>
+
+            <div class="hero-card__infos">
+              <h1>l<span>o</span>wic mangin</h1>
+
+              <h2>développeur front-end <span>| react.js</span></h2>
+            </div>
+          </div>  
+        </div>
       </div>
 
-      <section>
-        <h2>technos principales</h2>
-      </section>
-
-      <section>
-        <h2>réalisations</h2>
-      </section>
-
-      <section>
-        <h2>parcours</h2>
-      </section>
+      <div class="main__content-wrapper">
+        <section>
+          <h2>technos principales</h2>
+        </section>
+  
+        <section>
+          <h2>réalisations</h2>
+        </section>
+  
+        <section>
+          <h2>parcours</h2>
+        </section>
+      </div>
     </main>
 
     <footer><div class="footer-content"></div></footer>

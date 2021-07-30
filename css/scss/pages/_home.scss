@@ -1,19 +1,7 @@
 .home-content {
-  h1,
-  h2 {
-    margin: $grid-3 0;
-    text-align: center;
-  }
+  .main__content-wrapper {
+    background: $primary-100;
 
-  h1 span {
-    color: $tonic-500;
-  }
-
-  h2 span {
-    color: $primary-500;
-  }
-
-  section {
     @include small-wrapper;
 
     @media (min-width: $small-breakpoint) {
@@ -22,6 +10,23 @@
 
     @media (min-width: $medium-breakpoint) {
       @include large-wrapper;
+    }
+  }
+
+  section {
+    margin: $grid-2 0;
+    padding: $grid-3;
+
+    background: $neutral-100;
+
+    h2 {
+      margin: 0 auto;
+
+      text-align: center;
+
+      span {
+        color: $primary-500;
+      }
     }
   }
 }
