@@ -1,23 +1,58 @@
 footer {
   padding: $grid-2 $grid-4;
 
+  color: white;
+  font-weight: 300;
+
   background: $primary-900;
+}
 
-  .footer-content {
-    @include small-wrapper;
+.footer-content {
+  @include small-wrapper;
 
-    @media (min-width: $small-breakpoint) {
-      @include medium-wrapper;
-    }
-
-    @media (min-width: $medium-breakpoint) {
-      @include large-wrapper;
-    }
-
-    p {
-      color: white;
-      font-size: $h6-size;
-      text-align: center;
-    }
+  @media (min-width: $small-breakpoint) {
+    @include medium-wrapper;
   }
+
+  @media (min-width: $medium-breakpoint) {
+    @include large-wrapper;
+  }
+}
+
+.footer__infos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin: 0 0 $grid-3 0;
+}
+
+.footer__about {
+  grid-column: 1/3;
+
+  h4 {
+    color: $tonic-500;
+  }
+}
+
+.footer__social {
+  grid-column: 4;
+
+  text-align: right;
+
+  a {
+    display: inline-block;
+
+    margin: $grid-3 $grid-1;
+  }
+
+  i {
+    color: $primary-100;
+    font-size: $h1-size;
+  }
+}
+
+.footer__disclaimer {
+  color: $primary-100;
+  font-size: $h6-size;
+  text-align: center;
 }
