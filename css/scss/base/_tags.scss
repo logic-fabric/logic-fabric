@@ -30,13 +30,21 @@ p {
 }
 
 h1,
-h2,
+h2 {
+  color: $primary-700;
+  font-family: $font-title;
+
+  span {
+    color: $tonic-500;
+  }
+}
+
 h3,
 h4,
 h5,
 h6 {
   color: $primary-700;
-  font-family: $font-title;
+  font-family: $font-text;
 }
 
 h1 {
@@ -45,10 +53,6 @@ h1 {
 
 h2 {
   font-size: $h2-size;
-
-  &:first-letter {
-    color: $tonic-500;
-  }
 }
 
 h3 {

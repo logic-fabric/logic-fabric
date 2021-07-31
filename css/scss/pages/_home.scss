@@ -1,7 +1,5 @@
 .home-content {
   .main__content-wrapper {
-    background: $primary-100;
-
     @include small-wrapper;
 
     @media (min-width: $small-breakpoint) {
@@ -17,16 +15,33 @@
     margin: $grid-2 0;
     padding: $grid-3;
 
-    background: $neutral-100;
-
     h2 {
       margin: 0 auto;
 
+      color: $primary-500;
       text-align: center;
-
-      span {
-        color: $primary-500;
-      }
     }
+  }
+}
+
+.home__technos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: $grid-2 $grid-4 0 $grid-4;
+
+  text-align: center;
+
+  div {
+    width: 25%;
+    margin: $grid-3 0 $grid-2 0;
+  }
+
+  i {
+    padding: $grid-2;
+
+    color: $primary-500;
+    font-size: 4rem;
   }
 }
