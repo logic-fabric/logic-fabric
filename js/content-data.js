@@ -27,4 +27,8 @@ export const MAIN_TECHNOS = [
     name: "Python",
     icon: "fab fa-python",
   },
+  {
+    name: "Git",
+    icon: "fab fa-git-alt",
+  },
 ];
