@@ -1,14 +1,16 @@
-import { ProjectCard } from "../components/card.js";
+import { ExperienceCard, ProjectCard } from "../components/card.js";
 
 export class HomeBuilder {
-  constructor(technos, projects) {
+  constructor(technos, projects, curriculum) {
     this._technos = technos;
     this._projects = projects;
+    this._curriculum = curriculum;
   }
 
   render() {
     this._renderTechnos();
     this._renderProjects();
+    this._renderCurriculumVitae();
   }
 
   _renderTechnos() {
@@ -30,6 +32,14 @@ export class HomeBuilder {
 
     for (let project of this._projects) {
       projectsContainer.innerHTML += new ProjectCard(project).html;
+    }
+  }
+
+  _renderCurriculumVitae() {
+    const curriculumContainer = document.getElementById("curriculum-container");
+
+    for (let experience of this._curriculum) {
+      curriculumContainer.innerHTML += new ExperienceCard(experience).html;
     }
   }
 }

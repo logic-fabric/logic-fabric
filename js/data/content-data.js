@@ -159,3 +159,54 @@ export const SOME_PROJECTS = [
     responsive: ["sm"],
   },
 ];
+
+export const CURRICULUM_VITAE = [
+  {
+    title: "Formation développeur front-end",
+    type: "learning",
+    organization: "OpenClassrooms",
+    period: "décembre 2020 - aujourd'hui",
+  },
+  {
+    title: "Ingénieur en développement web",
+    type: "job",
+    organization: "ipso santé",
+    period: "février 2020 - août 2020",
+  },
+  {
+    title: "Développeur Python junior",
+    type: "job",
+    organization: "Naxos / Century 21",
+    period: "octobre 2019 - janvier 2020",
+  },
+  {
+    title: "Développeur web freelance",
+    type: "job",
+    organization: "Happy Dev",
+    period: "novembre 2018 - aujourd'hui",
+  },
+  {
+    title: "Formation développeur d'applications Python",
+    type: "learning",
+    organization: "OpenClassrooms",
+    period: "septembre 2017 - septembre 2018",
+  },
+  {
+    title: "Professeur de mathématiques",
+    type: "job",
+    organization: "Académie de Versailles",
+    period: "septembre 2015 - août 2017",
+  },
+  {
+    title: "CAPES externe de mathématiques",
+    type: "learning",
+    organization: "IUFM de Versailles",
+    period: "septembre 1994 - août 1996",
+  },
+  {
+    title: "Licence de mathématiques",
+    type: "learning",
+    organization: "Université de Versailles - St-Quentin-en-Yvelines",
+    period: "septembre 1993 - août 1994",
+  },
+];

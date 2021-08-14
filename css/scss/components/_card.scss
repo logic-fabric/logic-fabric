@@ -1,4 +1,8 @@
-.card {
+/* ============
+   PROJECT CARD
+   ============ */
+
+.project-card {
   position: relative;
 
   width: calc(31.7% - 1rem);
@@ -9,7 +13,7 @@
   background: white;
 }
 
-.card__cover {
+.project-card__cover {
   width: 100%;
   height: 11rem;
   overflow: hidden;
@@ -22,7 +26,7 @@
   }
 }
 
-.card__link {
+.project-card__link {
   position: absolute;
   top: 11rem;
 
@@ -59,11 +63,11 @@
   }
 }
 
-.card__title {
+.project-card__title {
   margin: $grid-3 0 $grid-1 0;
 }
 
-.card__tag {
+.project-card__tag {
   display: inline-block;
 
   margin: $grid-sm $grid-sm $grid-sm 0;
@@ -80,11 +84,11 @@
   }
 }
 
-.card__description {
+.project-card__description {
   margin: $grid-2 0 $grid-4 0;
 }
 
-.card__responsive {
+.project-card__responsive {
   position: absolute;
   right: $grid-2;
   bottom: $grid-2;
@@ -108,4 +112,86 @@
       pointer-events: none;
     }
   }
+}
+
+/* ===============
+   EXPERIENCE CARD
+   =============== */
+
+.experience-card {
+  display: flex;
+  align-items: center;
+
+  margin: $grid-2 $grid-5;
+  padding: $grid-2 $grid-3;
+  border-radius: $grid-1;
+
+  i {
+    display: inline-block;
+
+    width: 3rem;
+    height: 3rem;
+    margin: 0 $grid-3 0 0;
+    padding: 0.6rem;
+    border-radius: 50%;
+
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  &.learning {
+    margin-right: $grid-6;
+
+    background: $primary-100;
+
+    i {
+      background: $primary-700;
+    }
+
+    h3 {
+      color: $primary-700;
+    }
+
+    h4,
+    p {
+      color: $primary-900;
+    }
+  }
+
+  &.job {
+    margin-left: $grid-6;
+
+    background: $tonic-100;
+
+    i {
+      background: $tonic-700;
+    }
+
+    h3 {
+      color: $tonic-700;
+    }
+
+    h4,
+    p {
+      color: $tonic-900;
+    }
+  }
+}
+
+.experience-card__title {
+  font-size: $h5-size;
+}
+
+.experience-card__organization {
+  margin: $grid-sm 0 $grid-1 0;
+
+  font-size: $h6-size;
+  font-style: italic;
+  font-weight: 500;
 }
