@@ -195,7 +195,7 @@ export const CURRICULUM_VITAE = [
     title: "Professeur de mathématiques",
     type: "job",
     organization: "Académie de Versailles",
-    period: "septembre 2015 - août 2017",
+    period: "septembre 1995 - août 2017",
   },
   {
     title: "CAPES externe de mathématiques",
