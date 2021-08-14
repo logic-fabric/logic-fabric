@@ -29,13 +29,13 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  margin: $grid-2 $grid-4 0 $grid-4;
+  margin: $grid-2 $grid-4;
 
   text-align: center;
 
   div {
     width: 25%;
-    margin: $grid-3 0 $grid-2 0;
+    margin: $grid-3 0 0 0;
   }
 
   i {
@@ -44,4 +44,16 @@
     color: $primary-500;
     font-size: 4rem;
   }
+}
+
+.home__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  margin: $grid-4 $grid-4 $grid-2 $grid-4;
+  padding: $grid-2 $grid-2;
+  border-radius: $grid-1;
+
+  background: $neutral-100;
 }
