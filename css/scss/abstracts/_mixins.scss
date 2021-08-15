@@ -20,3 +20,27 @@
   margin: auto;
   padding: 0 $grid-2;
 }
+
+// =================
+// BOX-SHADOW MIXINS
+// =================
+
+@mixin medium-box-shadow {
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+@mixin small-box-shadow {
+  -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+@mixin small-inset-box-shadow {
+  -webkit-box-shadow: inset 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+@mixin no-box-shadow {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

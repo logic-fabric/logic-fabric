@@ -11,6 +11,8 @@
   border-radius: $grid-sm;
 
   background: white;
+
+  @include small-box-shadow;
 }
 
 .project-card__cover {
@@ -40,6 +42,8 @@
   text-align: center;
 
   background: $tonic-500;
+
+  @include small-box-shadow;
 
   &.github-link {
     right: 4.5rem;
@@ -127,6 +131,8 @@
   border-radius: $grid-1;
 
   opacity: 0.9;
+
+  @include medium-box-shadow;
 
   i {
     display: inline-block;

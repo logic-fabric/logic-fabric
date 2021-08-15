@@ -7,7 +7,7 @@ header {
 
   background: $primary-700;
 
-  
+  @include medium-box-shadow;
 }
 
 .header-content {
@@ -32,15 +32,15 @@ header {
 
   .header__social {
     grid-column: 4;
-  
+
     text-align: right;
-  
+
     a {
       display: inline-block;
-  
+
       margin: $grid-2;
     }
-  
+
     i {
       color: $primary-100;
       font-size: $h2-size;

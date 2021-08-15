@@ -50,6 +50,8 @@
     height: 100%;
 
     content: "";
+
+    @include medium-box-shadow;
   }
 
   &::before {
