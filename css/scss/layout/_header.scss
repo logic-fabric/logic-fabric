@@ -2,25 +2,48 @@ header {
   position: sticky;
   top: 0;
   z-index: $z-header-footer;
-  
+
   padding: $grid-2 $grid-4;
 
   background: $primary-700;
 
-  .header-content {
-    @include small-wrapper;
+  
+}
 
-    @media (min-width: $small-breakpoint) {
-      @include medium-wrapper;
+.header-content {
+  @include small-wrapper;
+
+  @media (min-width: $small-breakpoint) {
+    @include medium-wrapper;
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    @include large-wrapper;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    color: $primary-100;
+    font-size: $h4-size;
+  }
+
+  .header__social {
+    grid-column: 4;
+  
+    text-align: right;
+  
+    a {
+      display: inline-block;
+  
+      margin: $grid-2;
     }
-
-    @media (min-width: $medium-breakpoint) {
-      @include large-wrapper;
-    }
-
-    p {
+  
+    i {
       color: $primary-100;
-      font-size: $h4-size;
+      font-size: $h2-size;
     }
   }
 }
