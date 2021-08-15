@@ -1,4 +1,6 @@
 .home-content {
+  overflow: hidden;
+
   .main__content-wrapper {
     @include small-wrapper;
 
@@ -15,15 +17,16 @@
     margin: $grid-3 0 $grid-2 0;
     padding: $grid-3;
 
-    @media screen and (max-width: $small-breakpoint - 1) {
-      padding: $grid-3 0;
-    }
-
     h2 {
       margin: 0 auto;
 
       color: $primary-500;
       text-align: center;
+    }
+
+    @media screen and (max-width: $small-breakpoint - 1) {
+      margin: $grid-3 0 0 0;
+      padding: $grid-2 0;
     }
   }
 }
@@ -43,10 +46,6 @@
   text-align: center;
 
   transform: translate(0, 3rem);
-
-  @media screen and (max-width: $medium-breakpoint - 1) {
-    margin: 1.5 * $grid-3 $grid-4 $grid-4 $grid-4;
-  }
 
   &::before,
   &::after {
@@ -72,7 +71,7 @@
   &::after {
     background: linear-gradient(60deg, $tonic-100, white);
     opacity: 0.7;
-    transform: scale(1.2) rotate(-1deg) translate(-2rem, 1.5rem)
+    transform: scale(1.1, 1.2) rotate(-1deg) translate(-2rem, 1.5rem)
       skew(1deg, -1deg);
   }
 
@@ -89,6 +88,8 @@
   }
 
   @media screen and (max-width: $medium-breakpoint - 1) {
+    margin: 1.5 * $grid-3 $grid-4 $grid-4 $grid-4;
+
     &::before {
       transform: scale(1, 1.2) rotate(1deg) translate(6rem, -0.5rem)
         skew(-2deg, 2deg);
@@ -97,6 +98,36 @@
     &::after {
       transform: scale(1.1) rotate(-1deg) translate(0rem, 1.5rem)
         skew(1deg, -1deg);
+    }
+  }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    margin: $grid-3 $grid-2;
+
+    transform: translate(0, 1rem);
+
+    &::before {
+      transform: scale(1, 1.1) rotate(1deg) translate(1rem, 0) skew(-2deg, 2deg);
+    }
+
+    &::after {
+      transform: scale(1.1, 1.05) rotate(-1deg) translate(0, 0.5rem)
+        skew(1deg, -1deg);
+    }
+
+    div {
+      width: 50%;
+      margin: $grid-2 0 0 0;
+    }
+
+    i {
+      padding: $grid-1;
+
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: $h4-size;
     }
   }
 }
@@ -111,7 +142,7 @@
   justify-content: flex-start;
 
   margin: $grid-4 $grid-4 $grid-2 $grid-4;
-  padding: $grid-2 $grid-2;
+  padding: $grid-2;
   border-radius: $grid-1;
 
   background: no-repeat center url("../img/wavy-background.svg");
@@ -122,7 +153,8 @@
   }
 
   @media screen and (max-width: $small-breakpoint - 1) {
-    margin: $grid-3 $grid-2 0 $grid-2;
+    margin: $grid-3 0 0 0;
+    padding: $grid-1;
   }
 }
 
@@ -134,10 +166,6 @@
   position: relative;
 
   margin: $grid-5 $grid-4;
-
-  @media screen and (max-width: $medium-breakpoint - 1) {
-    margin: 1.5 * $grid-4 $grid-4;
-  }
 
   &::before,
   &::after {
@@ -164,5 +192,30 @@
 
     background: linear-gradient(165deg, $tonic-700, $tonic-100);
     transform: scale(1.1) translate(12rem, 11rem);
+  }
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    margin: $grid-4;
+
+
+    &::before {
+      transform: scale(0.8) translate(-8rem, -8rem);
+    }
+
+    &::after {
+      transform: scale(1) translate(6rem, 16rem);
+    }
+  }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    margin: $grid-4 0;
+
+    &::before {
+      transform: scale(0.7) translate(-9rem, -14rem);
+    }
+
+    &::after {
+      transform: scale(0.9) translate(6rem, 6rem);
+    }
   }
 }

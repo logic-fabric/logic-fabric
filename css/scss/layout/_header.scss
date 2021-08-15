@@ -7,6 +7,10 @@ header {
 
   background: $primary-700;
 
+  @media (max-width: $small-breakpoint - 1) {
+    padding: $grid-2 0;
+  }
+
   @include medium-box-shadow;
 }
 
@@ -28,6 +32,10 @@ header {
   p {
     color: $primary-100;
     font-size: $h4-size;
+
+    @media (max-width: $small-breakpoint - 1) {
+      font-size: $xs-size;
+    }
   }
 
   .header__social {
@@ -44,6 +52,16 @@ header {
     i {
       color: $primary-100;
       font-size: $h2-size;
+    }
+
+    @media (max-width: $small-breakpoint - 1) {
+      a {
+        margin: $grid-sm;
+      }
+
+      i {
+        font-size: $h6-size;
+      }
     }
   }
 }

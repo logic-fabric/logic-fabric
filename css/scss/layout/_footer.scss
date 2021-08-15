@@ -5,6 +5,10 @@ footer {
   font-weight: 300;
 
   background: $primary-900;
+
+  @media (max-width: $small-breakpoint - 1) {
+    padding: $grid-2 0;
+  }
 }
 
 .footer-content {
@@ -32,16 +36,23 @@ footer {
   h4 {
     color: $tonic-500;
   }
+
+  @media (max-width: $small-breakpoint - 1) {
+    h4 {
+      margin: $grid-2 0;
+      font-size: $h5-size;
+    }
+
+    p {
+      font-size: $sm-size;
+    }
+  }
 }
 
 .footer__social {
   grid-column: 4;
 
   text-align: right;
-
-  @media screen and (max-width: $medium-breakpoint - 1) {
-    grid-column: 3/5;
-  }
 
   a {
     display: inline-block;
@@ -53,10 +64,32 @@ footer {
     color: $primary-100;
     font-size: $h1-size;
   }
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    grid-column: 3/5;
+  }
+
+  @media (max-width: $small-breakpoint - 1) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    a {
+      margin: $grid-1 $grid-2;
+    }
+
+    i {
+      font-size: $h3-size;
+    }
+  }
 }
 
 .footer__disclaimer {
   color: $primary-100;
   font-size: $h6-size;
   text-align: center;
+
+  @media (max-width: $small-breakpoint - 1) {
+    font-size: $sm-size;
+  }
 }

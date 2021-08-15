@@ -9,6 +9,7 @@
   margin: $grid-2;
   padding: $grid-2;
   border-radius: $grid-sm;
+  overflow: hidden;
 
   background: white;
 
@@ -19,7 +20,8 @@
   }
 
   @media screen and (max-width: $small-breakpoint - 1) {
-    width: calc(100% - 2rem);
+    width: calc(100% - 1rem);
+    margin: $grid-1;
   }
 }
 
@@ -33,6 +35,10 @@
     border: $grid-xs solid $neutral-100;
 
     object-fit: cover;
+  }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    height: 9rem;
   }
 }
 
@@ -73,6 +79,10 @@
   i {
     display: inline-block;
   }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    top: 9rem;
+  }
 }
 
 .project-card__title {
@@ -93,6 +103,12 @@
 
   &.pro-tag {
     background: $danger-500;
+  }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    margin: $grid-xs $grid-sm $grid-xs 0;
+
+    font-size: $xs-size;
   }
 }
 
@@ -131,18 +147,16 @@
    =============== */
 
 .experience-card {
+  position: relative;
   display: flex;
   align-items: center;
 
   margin: $grid-2 $grid-5;
   padding: $grid-2 $grid-3;
   border-radius: $grid-1;
+  overflow: hidden;
 
   opacity: 0.9;
-
-  @media screen and (max-width: $medium-breakpoint - 1) {
-    margin: $grid-2 0;
-  }
 
   @include medium-box-shadow;
 
@@ -170,10 +184,6 @@
 
     background: $primary-100;
 
-    @media screen and (max-width: $medium-breakpoint - 1) {
-      margin-right: $grid-4
-    }
-
     i {
       background: $primary-700;
     }
@@ -193,10 +203,6 @@
 
     background: $tonic-100;
 
-    @media screen and (max-width: $medium-breakpoint - 1) {
-      margin-left: $grid-4
-    }
-
     i {
       background: $tonic-700;
     }
@@ -208,6 +214,72 @@
     h4,
     p {
       color: $tonic-900;
+    }
+  }
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    padding: $grid-2;
+
+    i {
+      margin: 0 $grid-2 0 0;
+    }
+
+    &.learning {
+      margin-right: $grid-4;
+    }
+
+    &.job {
+      margin-left: $grid-4;
+    }
+  }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    margin: $grid-2 0;
+    padding: $grid-1 $grid-2;
+
+    i {
+      position: absolute;
+      right: -1.5rem;
+      bottom: -2.5rem;
+      z-index: -500;
+
+      width: 10rem;
+      height: 10rem;
+      margin: 0;
+      padding: 2.5rem 2rem;
+      border-radius: 5rem 0 0 5rem;
+
+      font-size: 4rem;
+
+      opacity: 0.2;
+    }
+
+    h3 {
+      font-size: $h6-size;
+    }
+
+    h4 {
+      font-size: $txt-size;
+    }
+
+    p {
+      font-size: $sm-size;
+    }
+
+    &.learning {
+      margin-right: $grid-3;
+
+      h3 {
+        color: $primary-900;
+      }
+    }
+
+    &.job {
+      margin-left: $grid-3;
+
+      h3 {
+        color: $tonic-900;
+      }
     }
   }
 }
