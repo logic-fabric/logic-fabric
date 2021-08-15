@@ -24,6 +24,10 @@
   }
 }
 
+/* ====================
+   MAIN TECHNOS SECTION
+   ==================== */
+
 .home__technos {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +50,10 @@
   }
 }
 
+/* ================
+   PROJECTS SECTION
+   ================ */
+
 .home__projects {
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +67,39 @@
   background-size: cover;
 }
 
+/* ==================
+   CURRICULUM SECTION
+   ================== */
+
 .home__curriculum {
-  margin: $grid-4 $grid-4 $grid-2 $grid-4;
+  position: relative;
+
+  margin: $grid-4;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+
+    width: 48rem;
+    height: 48rem;
+
+    content: "";
+    filter: blur($grid-xs);
+  }
+
+  &::before {
+    border-radius: 50%;
+
+    background: linear-gradient(-135deg, $primary-100, $primary-700);
+    transform: scale(0.9) translate(-6rem, -6rem);
+  }
+
+  &::after {
+    border-radius: 50%;
+
+    background: linear-gradient(165deg, $tonic-700, $tonic-100);
+    transform: scale(1.1) translate(12rem, 11rem);
+  }
 }
