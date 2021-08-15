@@ -55,7 +55,8 @@
   padding: $grid-2 $grid-2;
   border-radius: $grid-1;
 
-  background: $neutral-100;
+  background: no-repeat center url("../img/wavy-background.svg");
+  background-size: cover;
 }
 
 .home__curriculum {
