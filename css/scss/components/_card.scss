@@ -5,7 +5,7 @@
 .project-card {
   position: relative;
 
-  width: calc(31.7% - 1rem);
+  width: calc((100% - 6rem) / 3);
   margin: $grid-2;
   padding: $grid-2;
   border-radius: $grid-sm;
