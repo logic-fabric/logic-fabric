@@ -13,6 +13,14 @@
   background: white;
 
   @include small-box-shadow;
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    width: calc((100% - 4rem) / 2);
+  }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    width: calc(100% - 2rem);
+  }
 }
 
 .project-card__cover {
@@ -132,6 +140,10 @@
 
   opacity: 0.9;
 
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    margin: $grid-2 0;
+  }
+
   @include medium-box-shadow;
 
   i {
@@ -158,6 +170,10 @@
 
     background: $primary-100;
 
+    @media screen and (max-width: $medium-breakpoint - 1) {
+      margin-right: $grid-4
+    }
+
     i {
       background: $primary-700;
     }
@@ -176,6 +192,10 @@
     margin-left: $grid-6;
 
     background: $tonic-100;
+
+    @media screen and (max-width: $medium-breakpoint - 1) {
+      margin-left: $grid-4
+    }
 
     i {
       background: $tonic-700;

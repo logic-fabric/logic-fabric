@@ -5,6 +5,10 @@
   background: linear-gradient(135deg, $primary-300, $tonic-100);
 
   @include small-inset-box-shadow;
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    height: 24rem;
+  }
 }
 
 .banner__content-wrapper {
@@ -28,6 +32,10 @@
 
   @media (prefers-reduced-motion: no-preference) {
     animation: Create-React-App-logo-spin infinite 20s linear;
+  }
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    right: 0;
   }
 }
 
@@ -57,6 +65,12 @@
 
   @include small-box-shadow;
 
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    top: $grid-3;
+
+    width: calc(100% - 4rem);
+  }
+
   &__cover {
     grid-column: 1;
     display: flex;
@@ -64,6 +78,12 @@
     align-items: center;
 
     padding: $grid-3;
+
+    @media screen and (max-width: $medium-breakpoint - 1) {
+      padding: $grid-2;
+
+      transform: scale(0.9);
+    }
 
     img {
       border-radius: 50%;
@@ -97,6 +117,18 @@
 
       span {
         color: $primary-700;
+      }
+    }
+
+    @media screen and (max-width: $medium-breakpoint - 1) {
+      padding: $grid-2;
+
+      h1 {
+        font-size: $h2-size;
+      }
+
+      h2 {
+        font-size: $h3-size;
       }
     }
   }
