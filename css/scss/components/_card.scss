@@ -48,7 +48,7 @@
 
   width: 2.5rem;
   height: 2.5rem;
-  padding: 0.35rem;
+  padding: 0.4rem;
   border-radius: 50%;
 
   color: white;
@@ -294,4 +294,8 @@
   font-size: $h6-size;
   font-style: italic;
   font-weight: 500;
+}
+
+.experience-card__period {
+  text-transform: lowercase;
 }

@@ -72,7 +72,7 @@ export const SOME_PROJECTS = [
     github: "https://github.com/logic-fabric/jungle-house",
     online: "https://60f06009df94bd10060f67ff--cocky-saha-035155.netlify.app",
     tags: ["react", "js", "css", "jsx"],
-    description: "Prototype de site e-commerce",
+    description: "Prototype pour un site e-commerce",
     responsive: ["lg"],
   },
   {
@@ -82,7 +82,7 @@ export const SOME_PROJECTS = [
     github: "https://github.com/logic-fabric/LoicMangin_7_27022021",
     online: "https://logic-fabric.github.io/LoicMangin_7_27022021",
     tags: ["js", "sass", "html"],
-    description: "Prototype de barre de recherche pour un site de cuisine",
+    description: "Prototype de barre de recherche pour un site de recettes",
     responsive: ["lg", "md", "sm"],
   },
   {
@@ -102,8 +102,8 @@ export const SOME_PROJECTS = [
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_4_30122020",
     online: "https://logic-fabric.github.io/LoicMangin_4_30122020/",
-    tags: ["js", "scss", "html"],
-    description: "Landing page pour s'inscrire à un évenement e-sport",
+    tags: ["js", "sass", "html"],
+    description: "Landing page pour s'inscrire à un marathon e-sport",
     responsive: ["lg", "md", "sm"],
   },
   {
@@ -124,7 +124,7 @@ export const SOME_PROJECTS = [
     online: "https://logic-fabric.github.io/LoicMangin_3_17122020/",
     tags: ["sass", "animations css", "html"],
     description:
-      "Prototype responsive pour un site sélectionnant des restaurants",
+      "Prototype pour un site de réservation dans des restaurants gastronomiques",
     responsive: ["lg", "md", "sm"],
   },
   {
@@ -134,7 +134,7 @@ export const SOME_PROJECTS = [
     github: "https://github.com/logic-fabric/LoicMangin_2_07122020",
     online: "https://logic-fabric.github.io/LoicMangin_2_07122020",
     tags: ["css", "html"],
-    description: "Prototype responsive pour un site d'annonces de location",
+    description: "Prototype pour un site d'annonces de location de vacances",
     responsive: ["lg", "md", "sm"],
   },
   {

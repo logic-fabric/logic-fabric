@@ -99,7 +99,7 @@ export class ExperienceCard {
         <div>
           <h3 class="experience-card__title">${this._title}</h3>
           <h4 class="experience-card__organization">${this._organization}</h4>
-          <p>${this._period}</p>
+          <p class="experience-card__period">${this._period}</p>
         </div>
       </article>`;
   }

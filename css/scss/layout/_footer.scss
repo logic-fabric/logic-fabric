@@ -37,6 +37,10 @@ footer {
     color: $tonic-500;
   }
 
+  p {
+    line-height: 1.35;
+  }
+
   @media (max-width: $small-breakpoint - 1) {
     h4 {
       margin: $grid-2 0;
