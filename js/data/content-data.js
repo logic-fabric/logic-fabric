@@ -36,7 +36,7 @@ export const MAIN_TECHNOS = [
 export const SOME_PROJECTS = [
   {
     title: "SportSee",
-    cover: "sportsee.png",
+    cover: "sportsee.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_12_14072021",
     online: "https://hopeful-mcclintock-f9bb9e.netlify.app",
@@ -46,7 +46,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Agence Shiny",
-    cover: "shiny-agency.png",
+    cover: "shiny-agency.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/shiny-agency",
     online:
@@ -57,7 +57,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Kasa",
-    cover: "kasa.png",
+    cover: "kasa.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_11_19052021",
     online: "https://distracted-clarke-8192aa.netlify.app",
@@ -67,7 +67,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Jungle House",
-    cover: "jungle-house.png",
+    cover: "jungle-house.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/jungle-house",
     online: "https://60f06009df94bd10060f67ff--cocky-saha-035155.netlify.app",
@@ -77,7 +77,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Les petits plats",
-    cover: "les-petits-plats.png",
+    cover: "les-petits-plats.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_7_27022021",
     online: "https://logic-fabric.github.io/LoicMangin_7_27022021",
@@ -87,7 +87,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "FishEye",
-    cover: "fisheye.png",
+    cover: "fisheye.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_6_29012021",
     online: "https://logic-fabric.github.io/LoicMangin_6_29012021",
@@ -98,7 +98,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Game On",
-    cover: "game-on.png",
+    cover: "game-on.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_4_30122020",
     online: "https://logic-fabric.github.io/LoicMangin_4_30122020/",
@@ -108,7 +108,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Space School",
-    cover: "space-school.png",
+    cover: "space-school.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/space-school",
     online: "https://logic-fabric.github.io/space-school",
@@ -118,7 +118,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Ohmyfood",
-    cover: "ohmyfood.png",
+    cover: "ohmyfood.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_3_17122020",
     online: "https://logic-fabric.github.io/LoicMangin_3_17122020/",
@@ -129,7 +129,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Reservia",
-    cover: "reservia.png",
+    cover: "reservia.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_2_07122020",
     online: "https://logic-fabric.github.io/LoicMangin_2_07122020",
@@ -139,7 +139,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "Référendum Aéroports de Paris",
-    cover: "referendum-adp.png",
+    cover: "referendum-adp.jpg",
     gitlab: true,
     github: "",
     online: "",
@@ -149,7 +149,7 @@ export const SOME_PROJECTS = [
   },
   {
     title: "CamionNet",
-    cover: "camion-net.png",
+    cover: "camion-net.jpg",
     gitlab: true,
     github: "",
     online: "",
