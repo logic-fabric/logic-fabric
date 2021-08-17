@@ -24,7 +24,6 @@ export class ProjectCard {
             this._github ? "" : " disabled"
           }" 
           href="${this._github}"
-          target="_blank"
           title="code source"
         >
           <i class="fab fa-${this._gitlab ? "gitlab" : "github"}"></i>
@@ -34,7 +33,6 @@ export class ProjectCard {
             this._online ? "" : " disabled"
           }" 
           href="${this._online}"
-          target="_blank"
           title="site démo"
         >
           <i class="fas fa-globe"></i>
