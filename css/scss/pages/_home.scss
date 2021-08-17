@@ -165,7 +165,7 @@
 .home__curriculum {
   position: relative;
 
-  margin: $grid-5 $grid-4;
+  margin: $grid-5 $grid-4 $grid-4 $grid-4;
 
   &::before,
   &::after {
@@ -197,7 +197,6 @@
   @media screen and (max-width: $medium-breakpoint - 1) {
     margin: $grid-4;
 
-
     &::before {
       transform: scale(0.8) translate(-8rem, -8rem);
     }
@@ -208,7 +207,7 @@
   }
 
   @media screen and (max-width: $small-breakpoint - 1) {
-    margin: $grid-4 0;
+    margin: $grid-4 0 $grid-3 0;
 
     &::before {
       transform: scale(0.7) translate(-9rem, -14rem);
@@ -217,5 +216,19 @@
     &::after {
       transform: scale(0.9) translate(6rem, 6rem);
     }
+  }
+}
+
+/* ==============
+   CALL TO ACTION
+   ============== */
+
+.home__contact {
+  margin: 0 0 $grid-5 0;
+
+  text-align: center;
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    margin: 0 0 $grid-4 0;
   }
 }

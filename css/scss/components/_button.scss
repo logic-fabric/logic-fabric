@@ -1,0 +1,77 @@
+.btn,
+.btn::after {
+  display: inline-block;
+
+  margin: $grid-2 auto;
+  padding: $grid-2 $grid-3;
+  border-radius: $grid-1;
+  outline: none;
+
+  transition: all 350ms;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  background: $primary-700;
+
+  &:hover {
+    @include medium-box-shadow;
+
+    background: lighten($primary-700, 5%);
+  }
+}
+
+.btn--cta {
+  position: relative;
+
+  padding: $grid-2 $grid-4;
+
+  font-size: $h3-size;
+
+  background: linear-gradient(60deg, $tonic-700, $tonic-500);
+
+  &::after {
+    position: absolute;
+    top: -$grid-2;
+    left: 0;
+    z-index: -1000;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(60deg, $primary-500, $primary-300);
+
+    content: "";
+  }
+
+  &:hover {
+    background: linear-gradient(
+      60deg,
+      lighten($tonic-700, 10%),
+      $tonic-500
+    );
+  }
+
+  &:hover::after {
+    transform: scale(1.1, 1.15) rotate(-5deg);
+  }
+
+  i {
+    display: inline-block;
+
+    margin: 0 0 0 $grid-3;
+  }
+
+  @media screen and (max-width: $small-breakpoint - 1) {
+    padding: $grid-2 $grid-3;
+
+    font-size: $h5-size;
+
+    i {
+      margin: 0 0 0 $grid-2;
+    }
+  }
+}
