@@ -6,10 +6,12 @@ const ejs = require("gulp-ejs");
 const rename = require("gulp-rename");
 
 const sass = require("gulp-sass")(require("sass"));
+const autoprefixer = require("gulp-autoprefixer");
 
 function watch() {
   gulp.watch("./templates/**/*.ejs", buildTemplates);
   gulp.watch("./css/scss/**/*.scss", buildCSS);
+  gulp.watch("./css/main.css", autoprefixCSS);
 }
 
 function buildTemplates() {
@@ -27,6 +29,16 @@ function buildCSS() {
     .pipe(gulp.dest("./css"));
 }
 
-module.exports.watch = watch;
-module.exports.buildTemplates = buildTemplates;
-module.exports.buildCSS = buildCSS;
+function autoprefixCSS() {
+  return gulp
+    .src("./css/main.css")
+    .pipe(autoprefixer())
+    .pipe(gulp.dest("./css"));
+}
+
+module.exports = {
+  watch: watch,
+  buildTemplates: buildTemplates,
+  buildCSS: buildCSS,
+  autoprefixCSS: autoprefixCSS,
+};

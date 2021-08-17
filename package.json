@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "node ./node_modules/gulp/bin/gulp.js watch",
     "buildTemplates": "node ./node_modules/gulp/bin/gulp.js buildTemplates",
-    "buildCSS": "node ./node_modules/gulp/bin/gulp.js buildCSS"
+    "buildCSS": "node ./node_modules/gulp/bin/gulp.js buildCSS",
+    "autoprefixCSS": "node ./node_modules/gulp/bin/gulp.js autoprefixCSS"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/logic-fabric/logic-fabric#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-ejs": "^5.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
