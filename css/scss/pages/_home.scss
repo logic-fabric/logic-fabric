@@ -96,7 +96,7 @@
     }
 
     &::after {
-      transform: scale(1.1) rotate(-1deg) translate(0rem, 1.5rem)
+      transform: scale(1.1) rotate(-1deg) translate(0, 1.5rem)
         skew(1deg, -1deg);
     }
   }

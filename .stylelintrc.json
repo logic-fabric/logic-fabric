@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["include", "mixin"] }],
+    "declaration-colon-newline-after": null,
+    "declaration-empty-line-before": null,
+    "no-eol-whitespace": null
+  }
+}
