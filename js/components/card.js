@@ -1,4 +1,8 @@
 export class ProjectCard {
+  /**
+   * @constructs
+   * @param {Object} project
+   */
   constructor(project) {
     this._title = project.title;
     this._cover = project.cover;
@@ -10,6 +14,9 @@ export class ProjectCard {
     this._responsive = project.responsive;
   }
 
+  /**
+   * @returns {string}
+   */
   get html() {
     return `<article class="project-card">
         <div class="project-card__cover">
@@ -19,25 +26,8 @@ export class ProjectCard {
           />
         </div>
 
-        ${this._github ? "<a " : "<span "}
-          class="project-card__link github-link${
-            this._github ? "" : " disabled"
-          }" 
-          href="${this._github}"
-          title="code source"
-        >
-          <i class="fab fa-${this._gitlab ? "gitlab" : "github"}"></i>
-        ${this._github ? "</a> " : "</span>"}
-
-        ${this._online ? "<a " : "<span "}
-          class="project-card__link online-link${
-            this._online ? "" : " disabled"
-          }" 
-          href="${this._online}"
-          title="site démo"
-        >
-          <i class="fas fa-globe"></i>
-          ${this._online ? "</a> " : "</span>"}
+        ${this._getLinkHtml(this._github, "github")}
+        ${this._getLinkHtml(this._online, "online")}
 
         <h3 class="project-card__title">${this._title}</h3>
 
@@ -68,6 +58,30 @@ export class ProjectCard {
       </article>`;
   }
 
+  /**
+   * @returns {string}
+   */
+  _getLinkHtml(url, linkType) {
+    let icon;
+
+    if (linkType === "github") {
+      icon = this._gitlab ? "fab fa-gitlab" : "fab fa-github";
+    } else {
+      icon = "fas fa-globe";
+    }
+
+    return `${url ? "<a " : "<span "}
+          class="project-card__link ${linkType}-link${url ? "" : " disabled"}" 
+          href="${url}"
+          title="code source"
+        >
+          <i class="${icon}"></i>
+        ${url ? "</a> " : "</span>"}`;
+  }
+
+  /**
+   * @returns {string}
+   */
   _getTagsHtml() {
     let tagsHtml = "";
 
@@ -82,6 +96,10 @@ export class ProjectCard {
 }
 
 export class ExperienceCard {
+  /**
+   * @constructs
+   * @param {Object} experience
+   */
   constructor(experience) {
     this._title = experience.title;
     this._type = experience.type;
@@ -89,6 +107,9 @@ export class ExperienceCard {
     this._period = experience.period;
   }
 
+  /**
+   * @returns {string}
+   */
   get html() {
     return `<article class="experience-card ${this._type}">
         <div>
