@@ -1,18 +1,30 @@
 import { ExperienceCard, ProjectCard } from "../components/card.js";
 
 export class HomeBuilder {
+  /**
+   * @constructs
+   * @param {Array.Object} technos
+   * @param {Array.Object} projects
+   * @param {Array.Object} curriculum
+   */
   constructor(technos, projects, curriculum) {
     this._technos = technos;
     this._projects = projects;
     this._curriculum = curriculum;
   }
 
+  /**
+   * Render home page contents.
+   */
   render() {
     this._renderTechnos();
     this._renderProjects();
     this._renderCurriculumVitae();
   }
 
+  /**
+   * Render main technos section.
+   */
   _renderTechnos() {
     const technosContainer = document.getElementById("technos-container");
 
@@ -27,6 +39,9 @@ export class HomeBuilder {
     }
   }
 
+  /**
+   * Render projects portfolio section.
+   */
   _renderProjects() {
     const projectsContainer = document.getElementById("projects-container");
 
@@ -35,6 +50,9 @@ export class HomeBuilder {
     }
   }
 
+  /**
+   * Render Curriculum Vitae section.
+   */
   _renderCurriculumVitae() {
     const curriculumContainer = document.getElementById("curriculum-container");
 
