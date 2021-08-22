@@ -1,3 +1,7 @@
+/* =========
+   HOME PAGE
+   ========= */
+
 .home-content {
   overflow: hidden;
 
@@ -31,9 +35,9 @@
   }
 }
 
-/* ====================
+/* --------------------
    MAIN TECHNOS SECTION
-   ==================== */
+   -------------------- */
 
 .home__technos {
   position: relative;
@@ -132,9 +136,9 @@
   }
 }
 
-/* ================
+/* ----------------
    PROJECTS SECTION
-   ================ */
+   ---------------- */
 
 .home__projects {
   display: flex;
@@ -158,9 +162,9 @@
   }
 }
 
-/* ==================
-   CURRICULUM SECTION
-   ================== */
+/* ------------------------
+   CURRICULUM VITAE SECTION
+   ------------------------ */
 
 .home__curriculum {
   position: relative;
@@ -219,9 +223,9 @@
   }
 }
 
-/* ==============
-   CALL TO ACTION
-   ============== */
+/* -------
+   CONTACT
+   ------- */
 
 .home__contact {
   margin: 0 0 $grid-5 0;

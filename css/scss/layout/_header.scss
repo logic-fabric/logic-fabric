@@ -1,3 +1,7 @@
+/* ======
+   HEADER
+   ====== */
+
 header {
   position: sticky;
   top: 0;
@@ -37,41 +41,41 @@ header {
       font-size: $xs-size;
     }
   }
+}
 
-  .header__social {
-    grid-column: 4;
+.header__social {
+  grid-column: 4;
 
-    text-align: right;
+  text-align: right;
 
+  a {
+    display: inline-block;
+
+    margin: $grid-1;
+    padding: $grid-1;
+    border: $grid-xs solid transparent;
+    border-radius: $grid-sm;
+    outline: none;
+
+    transition: all 250ms;
+
+    &:focus {
+      border-color: $primary-300;
+    }
+  }
+
+  i {
+    color: $primary-100;
+    font-size: $h2-size;
+  }
+
+  @media (max-width: $small-breakpoint - 1) {
     a {
-      display: inline-block;
-
-      margin: $grid-1;
-      padding: $grid-1;
-      border: $grid-xs solid transparent;
-      border-radius: $grid-sm;
-      outline: none;
-
-      transition: all 250ms;
-
-      &:focus {
-        border-color: $primary-300;
-      }
+      margin: $grid-sm;
     }
 
     i {
-      color: $primary-100;
-      font-size: $h2-size;
-    }
-
-    @media (max-width: $small-breakpoint - 1) {
-      a {
-        margin: $grid-sm;
-      }
-
-      i {
-        font-size: $h6-size;
-      }
+      font-size: $h6-size;
     }
   }
 }

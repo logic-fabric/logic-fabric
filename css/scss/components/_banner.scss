@@ -1,3 +1,7 @@
+/* ===========
+   HERO BANNER
+   =========== */
+
 .banner {
   height: 28rem;
   overflow: hidden;
@@ -56,6 +60,10 @@
     transform: rotate(360deg);
   }
 }
+
+/* ---------------------------
+   "GLASS" CARD ON HERO BANNER
+   --------------------------- */
 
 .hero-card {
   display: grid;
