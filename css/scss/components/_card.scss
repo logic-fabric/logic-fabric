@@ -113,10 +113,10 @@
   color: white;
   font-size: $sm-size;
 
-  background: $primary-500;
+  background: $primary-600;
 
   &.pro-tag {
-    background: $danger-500;
+    background: $danger-600;
   }
 
   @media screen and (max-width: $small-breakpoint - 1) {
