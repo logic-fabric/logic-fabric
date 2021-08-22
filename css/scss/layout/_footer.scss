@@ -88,12 +88,14 @@ footer {
   }
 
   @media (max-width: $small-breakpoint - 1) {
+    grid-column: 4;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     a {
-      margin: $grid-1 $grid-2;
+      margin: $grid-sm $grid-2;
+      padding: $grid-sm;
     }
 
     i {

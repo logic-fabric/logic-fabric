@@ -71,7 +71,8 @@ header {
 
   @media (max-width: $small-breakpoint - 1) {
     a {
-      margin: $grid-sm;
+      margin: 0;
+      padding: $grid-xs;
     }
 
     i {
