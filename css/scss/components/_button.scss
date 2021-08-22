@@ -47,14 +47,14 @@
     content: "";
   }
 
+  &:focus,
   &:hover {
-    background: linear-gradient(
-      60deg,
-      lighten($tonic-700, 10%),
-      $tonic-500
-    );
+    background: linear-gradient(60deg, lighten($tonic-700, 10%), $tonic-500);
+
+    @include medium-box-shadow;
   }
 
+  &:focus::after,
   &:hover::after {
     transform: scale(1.1, 1.15) rotate(-5deg);
   }

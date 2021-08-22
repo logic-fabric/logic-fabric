@@ -61,7 +61,17 @@ footer {
   a {
     display: inline-block;
 
-    margin: $grid-3 $grid-1;
+    margin: $grid-2 0;
+    padding: $grid-1;
+    border: $grid-xs solid transparent;
+    border-radius: $grid-sm;
+    outline: none;
+
+    transition: all 250ms;
+
+    &:focus {
+      border-color: $primary-500;
+    }
   }
 
   i {

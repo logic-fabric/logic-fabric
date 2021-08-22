@@ -46,7 +46,17 @@ header {
     a {
       display: inline-block;
 
-      margin: $grid-2;
+      margin: $grid-1;
+      padding: $grid-1;
+      border: $grid-xs solid transparent;
+      border-radius: $grid-sm;
+      outline: none;
+
+      transition: all 250ms;
+
+      &:focus {
+        border-color: $primary-300;
+      }
     }
 
     i {

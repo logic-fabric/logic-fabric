@@ -48,8 +48,10 @@
 
   width: 2.5rem;
   height: 2.5rem;
-  padding: 0.4rem;
+  padding: 0.3rem;
+  border: $grid-xs solid transparent;
   border-radius: 50%;
+  outline: none;
 
   color: white;
   font-size: 1.5rem;
@@ -57,7 +59,15 @@
 
   background: $tonic-500;
 
+  transition: all 250ms;
+
   @include small-box-shadow;
+
+  &:focus {
+    border-color: $tonic-700;
+
+    @include medium-box-shadow;
+  }
 
   &.github-link {
     right: 4.5rem;

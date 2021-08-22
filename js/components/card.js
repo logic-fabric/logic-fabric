@@ -19,7 +19,7 @@ export class ProjectCard {
           />
         </div>
 
-        <a 
+        ${this._github ? "<a " : "<span "}
           class="project-card__link github-link${
             this._github ? "" : " disabled"
           }" 
@@ -27,8 +27,9 @@ export class ProjectCard {
           title="code source"
         >
           <i class="fab fa-${this._gitlab ? "gitlab" : "github"}"></i>
-        </a>
-        <a 
+        ${this._github ? "</a> " : "</span>"}
+
+        ${this._online ? "<a " : "<span "}
           class="project-card__link online-link${
             this._online ? "" : " disabled"
           }" 
@@ -36,7 +37,7 @@ export class ProjectCard {
           title="site démo"
         >
           <i class="fas fa-globe"></i>
-        </a>
+          ${this._online ? "</a> " : "</span>"}
 
         <h3 class="project-card__title">${this._title}</h3>
 
