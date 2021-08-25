@@ -153,7 +153,7 @@ export const SOME_PROJECTS = [
     gitlab: true,
     github: "",
     online: "",
-    tags: ["pro", "python", "js", "django", "sass"],
+    tags: ["pro", "python", "django", "js", "sass"],
     description:
       "Front-end d'une application web pour une entreprise de nettoyage de poids lourds",
     responsive: ["sm"],
