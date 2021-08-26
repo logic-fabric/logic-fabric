@@ -62,18 +62,20 @@ export class ProjectCard {
    * @returns {string}
    */
   _getLinkHtml(url, linkType) {
-    let icon;
+    let icon, title;
 
     if (linkType === "github") {
       icon = this._gitlab ? "fab fa-gitlab" : "fab fa-github";
+      title= "code source"
     } else {
       icon = "fas fa-globe";
+      title = "site démo"
     }
 
     return `${url ? "<a " : "<span "}
           class="project-card__link ${linkType}-link${url ? "" : " disabled"}" 
           href="${url}"
-          title="code source"
+          title="${title}"
         >
           <i class="${icon}"></i>
         ${url ? "</a> " : "</span>"}`;
