@@ -33,6 +33,12 @@
   }
 }
 
+@keyframes Create-React-App-logo-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .banner__bg-img {
   position: absolute;
   top: $grid-4;
@@ -55,15 +61,21 @@
   }
 }
 
-@keyframes Create-React-App-logo-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* ---------------------------
    "GLASS" CARD ON HERO BANNER
    --------------------------- */
+
+@keyframes fade-in-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(1.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .hero-card {
   display: grid;
@@ -107,10 +119,21 @@
 
     padding: $grid-3;
 
-    img {
+    &-bg {
+      width: 16rem;
+      height: 16rem;
       border-radius: 50%;
+      overflow: hidden;
 
       background: linear-gradient(135deg, $tonic-500, $tonic-300);
+    }
+
+    img {
+      object-fit: cover;
+
+      @media (prefers-reduced-motion: no-preference) {
+        animation: fade-in-from-right 2s;
+      }
     }
 
     @media screen and (max-width: $medium-breakpoint - 1) {
