@@ -1,19 +1,11 @@
 export const MAIN_TECHNOS = [
   {
-    name: "HTML5",
-    icon: "fab fa-html5",
-  },
-  {
-    name: "CSS3",
-    icon: "fab fa-css3-alt",
+    name: "React.js",
+    icon: "fab fa-react",
   },
   {
     name: "JavaScript",
     icon: "fab fa-js",
-  },
-  {
-    name: "React.js",
-    icon: "fab fa-react",
   },
   {
     name: "Sass",
@@ -22,6 +14,14 @@ export const MAIN_TECHNOS = [
   {
     name: "Bootstrap",
     icon: "fab fa-bootstrap",
+  },
+  {
+    name: "CSS3",
+    icon: "fab fa-css3-alt",
+  },
+  {
+    name: "HTML5",
+    icon: "fab fa-html5",
   },
   {
     name: "Python",
@@ -33,17 +33,7 @@ export const MAIN_TECHNOS = [
   },
 ];
 
-export const SOME_PROJECTS = [
-  {
-    title: "SportSee",
-    cover: "sportsee.jpg",
-    gitlab: false,
-    github: "https://github.com/logic-fabric/LoicMangin_12_14072021",
-    online: "https://hopeful-mcclintock-f9bb9e.netlify.app",
-    tags: ["react", "js", "recharts", "jest", "css-in-js", "jsx"],
-    description: "Tableau de bord pour une application web de coaching sportif",
-    responsive: ["lg", "md"],
-  },
+export const ENHANCED_PROJECTS = [
   {
     title: "Agence Shiny",
     cover: "shiny-agency.jpg",
@@ -66,14 +56,14 @@ export const SOME_PROJECTS = [
     responsive: ["lg", "md", "sm"],
   },
   {
-    title: "Jungle House",
-    cover: "jungle-house.jpg",
+    title: "SportSee",
+    cover: "sportsee.jpg",
     gitlab: false,
-    github: "https://github.com/logic-fabric/jungle-house",
-    online: "https://60f06009df94bd10060f67ff--cocky-saha-035155.netlify.app",
-    tags: ["react", "js", "css", "jsx"],
-    description: "Prototype pour un site e-commerce",
-    responsive: ["lg"],
+    github: "https://github.com/logic-fabric/LoicMangin_12_14072021",
+    online: "https://hopeful-mcclintock-f9bb9e.netlify.app",
+    tags: ["react", "js", "recharts", "jest", "css-in-js", "jsx"],
+    description: "Tableau de bord pour une application web de coaching sportif",
+    responsive: ["lg", "md"],
   },
   {
     title: "Les petits plats",
@@ -83,17 +73,6 @@ export const SOME_PROJECTS = [
     online: "https://logic-fabric.github.io/LoicMangin_7_27022021",
     tags: ["js", "sass", "html"],
     description: "Prototype de barre de recherche pour un site de recettes",
-    responsive: ["lg", "md", "sm"],
-  },
-  {
-    title: "FishEye",
-    cover: "fisheye.jpg",
-    gitlab: false,
-    github: "https://github.com/logic-fabric/LoicMangin_6_29012021",
-    online: "https://logic-fabric.github.io/LoicMangin_6_29012021",
-    tags: ["js", "gulp", "sass", "html"],
-    description:
-      "Single Page Application en Vanilla JS, pour une agence de photographes",
     responsive: ["lg", "md", "sm"],
   },
   {
@@ -107,16 +86,6 @@ export const SOME_PROJECTS = [
     responsive: ["lg", "md", "sm"],
   },
   {
-    title: "Space School",
-    cover: "space-school.jpg",
-    gitlab: false,
-    github: "https://github.com/logic-fabric/space-school",
-    online: "https://logic-fabric.github.io/space-school",
-    tags: ["js", "gulp", "bootstrap", "ejs"],
-    description: "Prototype Bootstrap pour un site d'e-learning",
-    responsive: ["lg", "md", "sm"],
-  },
-  {
     title: "Ohmyfood",
     cover: "ohmyfood.jpg",
     gitlab: false,
@@ -125,6 +94,40 @@ export const SOME_PROJECTS = [
     tags: ["sass", "animations css", "html"],
     description:
       "Prototype pour un site de réservation dans des restaurants gastronomiques",
+    responsive: ["lg", "md", "sm"],
+  },
+];
+
+export const OTHER_PROJECTS = [
+  {
+    title: "Jungle House",
+    cover: "jungle-house.jpg",
+    gitlab: false,
+    github: "https://github.com/logic-fabric/jungle-house",
+    online: "https://60f06009df94bd10060f67ff--cocky-saha-035155.netlify.app",
+    tags: ["react", "js", "css", "jsx"],
+    description: "Prototype pour un site e-commerce",
+    responsive: ["lg"],
+  },
+  {
+    title: "FishEye",
+    cover: "fisheye.jpg",
+    gitlab: false,
+    github: "https://github.com/logic-fabric/LoicMangin_6_29012021",
+    online: "https://logic-fabric.github.io/LoicMangin_6_29012021",
+    tags: ["js", "gulp", "sass", "html"],
+    description:
+      "Single Page Application en Vanilla JS, pour une agence de photographes",
+    responsive: ["lg", "md", "sm"],
+  },
+  {
+    title: "Space School",
+    cover: "space-school.jpg",
+    gitlab: false,
+    github: "https://github.com/logic-fabric/space-school",
+    online: "https://logic-fabric.github.io/space-school",
+    tags: ["js", "gulp", "bootstrap", "ejs"],
+    description: "Prototype Bootstrap pour un site d'e-learning",
     responsive: ["lg", "md", "sm"],
   },
   {

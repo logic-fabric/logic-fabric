@@ -70,16 +70,12 @@
   i {
     display: inline-block;
 
-    margin: 0 0 0 $grid-3;
+    margin: 0 0 0 $grid-2;
   }
 
   @media screen and (max-width: $small-breakpoint - 1) {
     padding: $grid-2 $grid-3;
 
     font-size: $h5-size;
-
-    i {
-      margin: 0 0 0 $grid-2;
-    }
   }
 }
