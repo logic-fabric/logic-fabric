@@ -131,9 +131,7 @@
     img {
       object-fit: cover;
 
-      @media (prefers-reduced-motion: no-preference) {
-        animation: fade-in-from-right 2s;
-      }
+      animation: fade-in-from-right 2s;
     }
 
     @media screen and (max-width: $medium-breakpoint - 1) {
