@@ -124,6 +124,7 @@
       height: 16rem;
       border-radius: 50%;
       overflow: hidden;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
 
       background: linear-gradient(135deg, $tonic-500, $tonic-300);
     }
