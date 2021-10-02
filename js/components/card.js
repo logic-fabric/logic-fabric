@@ -66,10 +66,10 @@ export class ProjectCard {
 
     if (linkType === "github") {
       icon = this._gitlab ? "fab fa-gitlab" : "fab fa-github";
-      title= "code source"
+      title = "code source";
     } else {
       icon = "fas fa-globe";
-      title = "site démo"
+      title = "site démo";
     }
 
     return `${url ? "<a " : "<span "}
@@ -88,9 +88,16 @@ export class ProjectCard {
     let tagsHtml = "";
 
     for (let tag of this._tags) {
-      tagsHtml += `<span class="project-card__tag${
-        tag === "pro" ? " pro-tag" : ""
-      }">${tag}</span>`;
+      let additionalTag =
+        tag === "PoC" ? " poc-tag" : tag === "pro" ? " pro-tag" : "";
+      let title =
+        tag === "PoC" ? "Proof of Concept" : tag === "pro" ? "projet pro" : "";
+
+      tagsHtml += `<span 
+                    class="project-card__tag${additionalTag}" title="${title}"
+                  >
+                    ${tag}
+                  </span>`;
     }
 
     return tagsHtml;

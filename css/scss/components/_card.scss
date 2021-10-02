@@ -115,8 +115,16 @@
 
   background: $primary-600;
 
+  &.poc-tag {
+    color: $warning-900;
+
+    background: $warning-100;
+  }
+
   &.pro-tag {
-    background: $danger-600;
+    color: $success-900;
+
+    background: $success-100;
   }
 
   @media screen and (max-width: $small-breakpoint - 1) {
