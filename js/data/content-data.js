@@ -35,6 +35,16 @@ export const MAIN_TECHNOS = [
 
 export const ENHANCED_PROJECTS = [
   {
+    title: "Kasa",
+    cover: "kasa.jpg",
+    gitlab: false,
+    github: "https://github.com/logic-fabric/LoicMangin_11_19052021",
+    online: "https://distracted-clarke-8192aa.netlify.app",
+    tags: ["react", "js", "css", "jsx"],
+    description: "Front-end d'un site d'annonces immobilières",
+    responsive: ["lg", "md", "sm"],
+  },
+  {
     title: "Agence Shiny",
     cover: "shiny-agency.jpg",
     gitlab: false,
@@ -46,23 +56,13 @@ export const ENHANCED_PROJECTS = [
     responsive: ["lg"],
   },
   {
-    title: "Kasa",
-    cover: "kasa.jpg",
-    gitlab: false,
-    github: "https://github.com/logic-fabric/LoicMangin_11_19052021",
-    online: "https://distracted-clarke-8192aa.netlify.app",
-    tags: ["react", "js", "css", "jsx"],
-    description: "Front-end d'un site d'annonces immobilières",
-    responsive: ["lg", "md", "sm"],
-  },
-  {
     title: "SportSee",
     cover: "sportsee.jpg",
     gitlab: false,
     github: "https://github.com/logic-fabric/LoicMangin_12_14072021",
     online: "https://hopeful-mcclintock-f9bb9e.netlify.app",
     tags: ["react", "js", "recharts", "jest", "css-in-js", "jsx"],
-    description: "Tableau de bord pour une application web de coaching sportif",
+    description: "Prototype de dashboard pour une appli de coaching sportif",
     responsive: ["lg", "md"],
   },
   {
@@ -76,40 +76,6 @@ export const ENHANCED_PROJECTS = [
     responsive: ["lg", "md", "sm"],
   },
   {
-    title: "Game On",
-    cover: "game-on.jpg",
-    gitlab: false,
-    github: "https://github.com/logic-fabric/LoicMangin_4_30122020",
-    online: "https://logic-fabric.github.io/LoicMangin_4_30122020/",
-    tags: ["js", "sass", "html"],
-    description: "Landing page pour s'inscrire à un marathon e-sport",
-    responsive: ["lg", "md", "sm"],
-  },
-  {
-    title: "Ohmyfood",
-    cover: "ohmyfood.jpg",
-    gitlab: false,
-    github: "https://github.com/logic-fabric/LoicMangin_3_17122020",
-    online: "https://logic-fabric.github.io/LoicMangin_3_17122020/",
-    tags: ["sass", "animations css", "html"],
-    description:
-      "Prototype pour un site de réservation dans des restaurants gastronomiques",
-    responsive: ["lg", "md", "sm"],
-  },
-];
-
-export const OTHER_PROJECTS = [
-  {
-    title: "Jungle House",
-    cover: "jungle-house.jpg",
-    gitlab: false,
-    github: "https://github.com/logic-fabric/jungle-house",
-    online: "https://60f06009df94bd10060f67ff--cocky-saha-035155.netlify.app",
-    tags: ["react", "js", "css", "jsx"],
-    description: "Prototype pour un site e-commerce",
-    responsive: ["lg"],
-  },
-  {
     title: "FishEye",
     cover: "fisheye.jpg",
     gitlab: false,
@@ -121,23 +87,24 @@ export const OTHER_PROJECTS = [
     responsive: ["lg", "md", "sm"],
   },
   {
-    title: "Space School",
-    cover: "space-school.jpg",
+    title: "Game On",
+    cover: "game-on.jpg",
     gitlab: false,
-    github: "https://github.com/logic-fabric/space-school",
-    online: "https://logic-fabric.github.io/space-school",
-    tags: ["js", "gulp", "bootstrap", "ejs"],
-    description: "Prototype Bootstrap pour un site d'e-learning",
+    github: "https://github.com/logic-fabric/LoicMangin_4_30122020",
+    online: "https://logic-fabric.github.io/LoicMangin_4_30122020/",
+    tags: ["js", "sass", "html"],
+    description: "Landing page d'inscription à un marathon e-sport",
     responsive: ["lg", "md", "sm"],
   },
   {
-    title: "Reservia",
-    cover: "reservia.jpg",
+    title: "Ohmyfood",
+    cover: "ohmyfood.jpg",
     gitlab: false,
-    github: "https://github.com/logic-fabric/LoicMangin_2_07122020",
-    online: "https://logic-fabric.github.io/LoicMangin_2_07122020",
-    tags: ["css", "html"],
-    description: "Prototype pour un site d'annonces de location de vacances",
+    github: "https://github.com/logic-fabric/LoicMangin_3_17122020",
+    online: "https://logic-fabric.github.io/LoicMangin_3_17122020/",
+    tags: ["sass", "animations css", "html"],
+    description:
+      "Prototype pour un site de réservation dans des restaurants gastronomiques",
     responsive: ["lg", "md", "sm"],
   },
   {
@@ -160,6 +127,39 @@ export const OTHER_PROJECTS = [
     description:
       "Front-end d'une application web pour une entreprise de nettoyage de poids lourds",
     responsive: ["sm"],
+  },
+];
+
+export const OTHER_PROJECTS = [
+  {
+    title: "Jungle House",
+    cover: "jungle-house.jpg",
+    gitlab: false,
+    github: "https://github.com/logic-fabric/jungle-house",
+    online: "https://60f06009df94bd10060f67ff--cocky-saha-035155.netlify.app",
+    tags: ["react", "js", "css", "jsx"],
+    description: "Prototype pour un site e-commerce",
+    responsive: ["lg"],
+  },
+  {
+    title: "Space School",
+    cover: "space-school.jpg",
+    gitlab: false,
+    github: "https://github.com/logic-fabric/space-school",
+    online: "https://logic-fabric.github.io/space-school",
+    tags: ["js", "gulp", "bootstrap", "ejs"],
+    description: "Prototype Bootstrap pour un site d'e-learning",
+    responsive: ["lg", "md", "sm"],
+  },
+  {
+    title: "Reservia",
+    cover: "reservia.jpg",
+    gitlab: false,
+    github: "https://github.com/logic-fabric/LoicMangin_2_07122020",
+    online: "https://logic-fabric.github.io/LoicMangin_2_07122020",
+    tags: ["css", "html"],
+    description: "Prototype pour un site d'annonces de location de vacances",
+    responsive: ["lg", "md", "sm"],
   },
 ];
 
