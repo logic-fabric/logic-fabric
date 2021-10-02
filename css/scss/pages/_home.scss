@@ -79,16 +79,19 @@
       skew(1deg, -1deg);
   }
 
-  div {
+  .techno-container {
     width: 25%;
     margin: $grid-3 0 0 0;
   }
 
-  i {
-    padding: $grid-2;
+  .techno-logo-container {
+    height: $grid-4;
+    margin: $grid-2;
 
-    color: $primary-500;
-    font-size: 4rem;
+    img {
+      width: $grid-4;
+      height: $grid-4;
+    }
   }
 
   @media screen and (max-width: $medium-breakpoint - 1) {
@@ -100,8 +103,7 @@
     }
 
     &::after {
-      transform: scale(1.1) rotate(-1deg) translate(0, 1.5rem)
-        skew(1deg, -1deg);
+      transform: scale(1.1) rotate(-1deg) translate(0, 1.5rem) skew(1deg, -1deg);
     }
   }
 
@@ -119,15 +121,19 @@
         skew(1deg, -1deg);
     }
 
-    div {
+    .techno-container {
       width: 50%;
       margin: $grid-2 0 0 0;
     }
 
-    i {
-      padding: $grid-1;
+    .techno-logo-container {
+      height: 3rem;
+      margin: $grid-1;
 
-      font-size: 3rem;
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
     }
 
     h3 {

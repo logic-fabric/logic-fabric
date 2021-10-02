@@ -1,35 +1,35 @@
 export const MAIN_TECHNOS = [
   {
     name: "React.js",
-    icon: "fab fa-react",
+    logo: "reactjs.svg",
   },
   {
-    name: "JavaScript",
-    icon: "fab fa-js",
+    name: "Redux",
+    logo: "redux.svg",
   },
   {
     name: "Sass",
-    icon: "fab fa-sass",
+    logo: "sass.svg",
   },
   {
-    name: "Bootstrap",
-    icon: "fab fa-bootstrap",
+    name: "Tailwind CSS",
+    logo: "tailwind-css.svg",
   },
   {
-    name: "CSS3",
-    icon: "fab fa-css3-alt",
+    name: "Jest",
+    logo: "jest.svg",
   },
   {
-    name: "HTML5",
-    icon: "fab fa-html5",
+    name: "Gulp",
+    logo: "gulp.svg",
   },
   {
     name: "Python",
-    icon: "fab fa-python",
+    logo: "python.svg",
   },
   {
     name: "Git",
-    icon: "fab fa-git-alt",
+    logo: "git.svg",
   },
 ];
 

@@ -32,9 +32,17 @@ export class HomeBuilder {
       const technoBox = document.createElement("div");
 
       technoBox.innerHTML = `
-        <i class="${techno.icon}"></i>
+        <div class="techno-logo-container">
+          <img 
+            src="./img/technos/${techno.logo}" 
+            alt="logo ${techno.name}" 
+            width="64" "height="64" 
+          />
+        </div>
         <h3>${techno.name}</h3>
       `;
+      technoBox.classList.add("techno-container");
+      
       technosContainer.appendChild(technoBox);
     }
   }
