@@ -4,7 +4,7 @@
 
 Former Python developer who was a former math teacher, I make my own way to become a design engineer.
 
-- 🌱 I’m currently going deeper into _React.js_, the _Redux_ pattern and algorithmic.
+- 🌱 I’m currently going deeper into _React.js_, the _Redux_ pattern, testing and algorithmic.
 - 🔭 Next I'll learn more about OOP design patterns, _TypeScript_ and _Next.js_,  then deal with UI & UX design in depth.
 
 ### How to contact me
