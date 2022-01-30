@@ -165,10 +165,16 @@ export const OTHER_PROJECTS = [
 
 export const CURRICULUM_VITAE = [
   {
+    title: "Développeur Front-end",
+    type: "job",
+    organization: "Padam Mobility",
+    period: "novembre 2021 - aujourd'hui",
+  },
+  {
     title: "Formation développeur front-end",
     type: "learning",
     organization: "OpenClassrooms",
-    period: "décembre 2020 - aujourd'hui",
+    period: "décembre 2020 - février 2022",
   },
   {
     title: "Ingénieur en développement web",
