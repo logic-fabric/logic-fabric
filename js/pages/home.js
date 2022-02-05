@@ -42,7 +42,7 @@ export class HomeBuilder {
         <h3>${techno.name}</h3>
       `;
       technoBox.classList.add("techno-container");
-      
+
       technosContainer.appendChild(technoBox);
     }
   }

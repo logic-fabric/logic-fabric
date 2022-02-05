@@ -62,11 +62,19 @@ header {
     &:focus {
       border-color: $primary-300;
     }
+
+    &:hover {
+      transform: translateY(-0.125rem);
+    }
   }
 
   i {
     color: $primary-100;
     font-size: $h2-size;
+
+    &:hover {
+      color: white;
+    }
   }
 
   @media (max-width: $small-breakpoint - 1) {

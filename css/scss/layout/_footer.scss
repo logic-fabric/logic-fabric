@@ -76,11 +76,19 @@ footer {
     &:focus {
       border-color: $primary-500;
     }
+
+    &:hover {
+      transform: translateY(-0.125rem);
+    }
   }
 
   i {
     color: $primary-100;
     font-size: $h1-size;
+
+    &:hover {
+      color: white;
+    }
   }
 
   @media screen and (max-width: $medium-breakpoint - 1) {

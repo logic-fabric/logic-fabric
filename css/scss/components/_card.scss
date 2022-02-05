@@ -73,6 +73,10 @@
     @include medium-box-shadow;
   }
 
+  &:hover {
+    transform: translateY(-0.25rem);
+  }
+
   &.github-link {
     right: 4.5rem;
 

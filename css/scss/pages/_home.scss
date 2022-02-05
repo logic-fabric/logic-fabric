@@ -172,6 +172,48 @@
    CURRICULUM VITAE SECTION
    ------------------------ */
 
+@keyframes smooth-move-for-before {
+  0% {
+    transform: scale(0.9) translate(-6rem, -8rem);
+  }
+  20% {
+    transform: scale(0.91) translate(-6rem, -8.25rem);
+  }
+  40% {
+    transform: scale(0.9) translate(-5.5rem, -8rem);
+  }
+  60% {
+    transform: scale(0.89) translate(-6rem, -8rem);
+  }
+  80% {
+    transform: scale(0.9) translate(-6.5rem, -8rem);
+  }
+  100% {
+    transform: scale(0.91) translate(-6.25rem, -7.75rem);
+  }
+}
+
+@keyframes smooth-move-for-after {
+  0% {
+    transform: scale(1.1) translate(12rem, 11rem);
+  }
+  20% {
+    transform: scale(1.09) translate(11.75rem, 10.75rem);
+  }
+  40% {
+    transform: scale(1.1) translate(12rem, 10.5rem);
+  }
+  60% {
+    transform: scale(1.11) translate(12.25rem, 11rem);
+  }
+  80% {
+    ttransform: scale(1.1) translate(12rem, 11.5rem);
+  }
+  100% {
+    transform: scale(1.085) translate(11.5rem, 11rem);
+  }
+}
+
 .home__curriculum {
   position: relative;
 
@@ -195,6 +237,8 @@
 
     background: linear-gradient(-135deg, $primary-100, $primary-700);
     transform: scale(0.9) translate(-6rem, -8rem);
+
+    animation: smooth-move-for-before linear 5s infinite alternate;
   }
 
   &::after {
@@ -202,6 +246,8 @@
 
     background: linear-gradient(165deg, $tonic-700, $tonic-100);
     transform: scale(1.1) translate(12rem, 11rem);
+
+    animation: smooth-move-for-after linear 7s infinite alternate;
   }
 
   @media screen and (max-width: $medium-breakpoint - 1) {
