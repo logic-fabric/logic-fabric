@@ -22,7 +22,7 @@ export class ProjectCard {
         <div class="project-card__cover">
           <img 
             src="./img/projects/${this._cover}" 
-            alt="Capture du projet ${this._title}" 
+            alt="Capture d'écran du projet ${this._title}" 
           />
         </div>
 
@@ -62,20 +62,23 @@ export class ProjectCard {
    * @returns {string}
    */
   _getLinkHtml(url, linkType) {
-    let icon, title;
+    let ariaLabel, icon, title;
 
     if (linkType === "github") {
       icon = this._gitlab ? "fab fa-gitlab" : "fab fa-github";
       title = "code source";
+      ariaLabel = `aria-label="Code source du projet ${this._title}"`;
     } else {
       icon = "fas fa-globe";
       title = "site démo";
+      ariaLabel = `aria-label="Lien vers le projet ${this._title}"`;
     }
 
     return `${url ? "<a " : "<span "}
           class="project-card__link ${linkType}-link${url ? "" : " disabled"}" 
           href="${url}"
           title="${title}"
+          ${url ? ariaLabel : ""}
         >
           <i class="${icon}"></i>
         ${url ? "</a> " : "</span>"}`;
