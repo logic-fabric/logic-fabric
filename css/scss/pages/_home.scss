@@ -238,7 +238,7 @@
     background: linear-gradient(-135deg, $primary-100, $primary-700);
     transform: scale(0.9) translate(-6rem, -8rem);
 
-    animation: smooth-move-for-before linear 5s infinite alternate;
+    animation: smooth-move-for-before linear 7s infinite alternate;
   }
 
   &::after {
@@ -247,7 +247,7 @@
     background: linear-gradient(165deg, $tonic-700, $tonic-100);
     transform: scale(1.1) translate(12rem, 11rem);
 
-    animation: smooth-move-for-after linear 7s infinite alternate;
+    animation: smooth-move-for-after linear 9s infinite alternate;
   }
 
   @media screen and (max-width: $medium-breakpoint - 1) {
