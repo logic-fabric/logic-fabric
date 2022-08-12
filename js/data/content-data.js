@@ -1,5 +1,9 @@
 export const MAIN_TECHNOS = [
   {
+    name: "TypeScript",
+    logo: "typescript.svg",
+  },
+  {
     name: "React.js",
     logo: "reactjs.svg",
   },
@@ -8,28 +12,24 @@ export const MAIN_TECHNOS = [
     logo: "redux.svg",
   },
   {
-    name: "Sass",
-    logo: "sass.svg",
-  },
-  {
     name: "Tailwind CSS",
     logo: "tailwind-css.svg",
+  },
+  {
+    name: "Sass",
+    logo: "sass.svg",
   },
   {
     name: "Jest",
     logo: "jest.svg",
   },
   {
-    name: "Gulp",
-    logo: "gulp.svg",
+    name: "Cypress",
+    logo: "cypress.svg",
   },
   {
     name: "Python",
     logo: "python.svg",
-  },
-  {
-    name: "Git",
-    logo: "git.svg",
   },
 ];
 
