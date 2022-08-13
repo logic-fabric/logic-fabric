@@ -18,20 +18,44 @@
   }
 
   section {
-    margin: $grid-3 0 $grid-2 0;
-    padding: $grid-3;
+    margin: $grid-3 0;
 
     h2 {
       margin: 0 auto;
 
       color: $primary-500;
       text-align: center;
+
+      &.home__projects-heading {
+        padding: $grid-4 0 0 0;
+      }
+
+      &.home__curriculum-heading {
+        padding: $grid-3 0;
+
+        @media screen and (max-width: $small-breakpoint - 1) {
+          padding: $grid-2 0;
+        }
+      }
     }
 
     @media screen and (max-width: $small-breakpoint - 1) {
-      margin: $grid-3 0 0 0;
-      padding: $grid-2 0;
+      margin: $grid-3 0 0;
     }
+  }
+}
+
+/* --------------
+   CONTACT BUTTON
+   -------------- */
+
+.home__contact {
+  margin: $grid-4 0;
+
+  text-align: center;
+
+  @media screen and (max-width: $medium-breakpoint - 1) {
+    margin: $grid-3 0;
   }
 }
 
@@ -146,7 +170,7 @@
    PROJECTS SECTION
    ---------------- */
 
-.home__projects {
+.home-content .home__projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -217,7 +241,7 @@
 .home__curriculum {
   position: relative;
 
-  margin: $grid-5 $grid-4 $grid-4 $grid-4;
+  margin: $grid-4;
 
   &::before,
   &::after {
@@ -272,19 +296,5 @@
     &::after {
       transform: scale(0.9) translate(6rem, 6rem);
     }
-  }
-}
-
-/* -------
-   CONTACT
-   ------- */
-
-.home__contact {
-  margin: 0 0 $grid-5 0;
-
-  text-align: center;
-
-  @media screen and (max-width: $medium-breakpoint - 1) {
-    margin: 0 0 $grid-4 0;
   }
 }
