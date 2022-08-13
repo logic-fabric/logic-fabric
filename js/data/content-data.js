@@ -1,15 +1,15 @@
 export const MAIN_TECHNOS = [
   {
-    name: "TypeScript",
-    logo: "typescript.svg",
-  },
-  {
     name: "React.js",
     logo: "reactjs.svg",
   },
   {
     name: "Redux",
     logo: "redux.svg",
+  },
+  {
+    name: "TypeScript",
+    logo: "typescript.svg",
   },
   {
     name: "Tailwind CSS",
