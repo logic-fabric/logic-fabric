@@ -2,10 +2,10 @@
 
 ### Hi, I'm Lowic! Welcome to my code warehouse! 👋
 
-Former Python developer who was a former math teacher, I make my own way to become a design engineer.
+Former Python developer and former math teacher, I make my own way to **become a design engineer / designOps** (front-end developer and UI/UX designer combo).
 
-- 🌱 I’m currently going deeper into _React.js_, the _Redux_ pattern, testing and algorithmic.
-- 🔭 Next I'll learn more about OOP design patterns, _TypeScript_ and _Next.js_,  then deal with UI & UX design in depth.
+- 🌱 I’m currently going deeper into _TypeScript_, _React.js_, the _Redux_ pattern, testing (_Jest / Testing Library / Cypress_) and algorithms.
+- 🔭 Next I'll learn more about OOP design patterns, functional programming and _Next.js_, then deal with UI & UX design in depth.
 
 ### How to contact me
 
