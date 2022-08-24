@@ -34,7 +34,10 @@
 
 .btn--cta {
   position: relative;
+  display: flex;
+  align-items: center;
 
+  width: fit-content;
   padding: $grid-2 $grid-4;
 
   font-size: $h3-size;
@@ -70,7 +73,7 @@
   i {
     display: inline-block;
 
-    margin: 0 0 0 $grid-2;
+    margin: 0 $grid-2 0 0;
   }
 
   @media screen and (max-width: $small-breakpoint - 1) {
