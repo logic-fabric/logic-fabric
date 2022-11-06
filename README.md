@@ -1,11 +1,11 @@
-<img src="./img/github-banner.png" alt="" width="100%" />
+<img src="./img/github-banner-2022.png" alt="" width="100%" />
 
-### Hi, I'm Lowic! Welcome to my code warehouse! 👋
+## Hi, I'm Lowic! Welcome to my code warehouse! 👋
 
-Former Python developer and former math teacher, I make my own way to **become a design engineer / designOps** (front-end developer and UI/UX designer combo).
+Former Python developer and former math teacher, I make my own way to **become a UX engineer / designOps** (front-end developer and UI/UX designer combo).
 
-- 🌱 I’m currently going deeper into _TypeScript_, _React.js_, the _Redux_ pattern, testing (_Jest / Testing Library / Cypress_) and algorithms.
-- 🔭 Next I'll learn more about OOP design patterns, functional programming and _Next.js_, then deal with UI & UX design in depth.
+- 🌱 I’m currently going deeper into testing (_Jest / Testing Library / Cypress_), _TypeScript_ and UI/UX.
+- 🔭 Next I'll learn more about OOP design patterns, functional programming and _Remix_..
 
 ### How to contact me
 
