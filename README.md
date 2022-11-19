@@ -5,7 +5,7 @@
 Former Python developer and former math teacher, I make my own way to **become a UX engineer / designOps** (front-end developer and UI/UX designer combo).
 
 - 🌱 I’m currently going deeper into testing (_Jest / Testing Library / Cypress_), _TypeScript_ and UI/UX.
-- 🔭 Next I'll learn more about OOP design patterns, functional programming and _Remix_..
+- 🔭 Next I'll learn more about OOP design patterns, functional programming, _Next.js_ and _Remix_.
 
 ### How to contact me
 
