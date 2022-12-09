@@ -38,7 +38,7 @@ header {
     font-size: $h4-size;
 
     @media (max-width: $small-breakpoint - 1) {
-      font-size: $xs-size;
+      font-size: $txt-size;
     }
   }
 }
@@ -47,6 +47,10 @@ header {
   grid-column: 4;
 
   text-align: right;
+
+  ul {
+    display: flex;
+  }
 
   a {
     display: inline-block;
@@ -68,7 +72,7 @@ header {
     }
   }
 
-  i {
+  span {
     color: $primary-100;
     font-size: $h2-size;
 
@@ -78,13 +82,6 @@ header {
   }
 
   @media (max-width: $small-breakpoint - 1) {
-    a {
-      margin: 0;
-      padding: $grid-xs;
-    }
-
-    i {
-      font-size: $h6-size;
-    }
+    display: none;
   }
 }
