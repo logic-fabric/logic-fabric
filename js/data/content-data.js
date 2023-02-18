@@ -165,7 +165,7 @@ export const OTHER_PROJECTS = [
 
 export const CURRICULUM_VITAE = [
   {
-    title: "Développeur Front-end | designOps",
+    title: "Développeur Front-end | UX Engineer",
     type: "job",
     organization: "Padam Mobility",
     period: "novembre 2021 - aujourd'hui",
