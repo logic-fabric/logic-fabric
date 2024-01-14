@@ -165,10 +165,22 @@ export const OTHER_PROJECTS = [
 
 export const CURRICULUM_VITAE = [
   {
-    title: "Développeur Front-end | UX Engineer",
+    title: "Développeur front-end freelance | Ingénieur UX",
+    type: "job",
+    organization: "Happy Dev",
+    period: "novembre 2018 - aujourd'hui",
+  },
+  {
+    title: "Développeur front-end",
+    type: "job",
+    organization: "Poppins, anciennement Mila",
+    period: "août 2023 - janvier 2024",
+  },
+  {
+    title: "Développeur front-end | Ingénieur UX",
     type: "job",
     organization: "Padam Mobility",
-    period: "novembre 2021 - aujourd'hui",
+    period: "novembre 2021 - avril 2023",
   },
   {
     title: "Formation développeur front-end",
@@ -187,12 +199,6 @@ export const CURRICULUM_VITAE = [
     type: "job",
     organization: "Naxos / Century 21",
     period: "octobre 2019 - janvier 2020",
-  },
-  {
-    title: "Développeur web freelance",
-    type: "job",
-    organization: "Happy Dev",
-    period: "novembre 2018 - aujourd'hui",
   },
   {
     title: "Formation développeur d'applications Python",
