@@ -2,12 +2,16 @@
 
 ## Hi, I'm Lowic! Welcome to my code warehouse! 👋
 
-Former Python developer and former math teacher, I make my own way to **become a UX engineer / designOps** (front-end developer and UI/UX designer combo).
+As a **front-end developer freelancer**, I am on my own way **to becoming a UX engineer** (front-end developer and UI/UX designer combo).
 
-- 🌱 I’m currently going deeper into testing (_Jest / Testing Library / Cypress_), _TypeScript_ and UI/UX.
-- 🔭 Next I'll learn more about OOP design patterns, functional programming, _Next.js_ and _Remix_.
+🌱 Currently, I am:
 
-### How to contact me
+- **professionalizing into UI/UX** and preparing for the [Google UX Design Professional Certificate](https://www.coursera.org/professional-certificates/google-ux-design)
 
-- [LinkedIn](https://www.linkedin.com/in/lowic-mangin)
-- [Twitter](https://twitter.com/__L_Mangin__)
+- **going deeper in CSS** with Josh Comeau's course [_CSS for JavaScript Developers_](https://css-for-js.dev/) and Lea Verou's book [_CSS Secrets_](https://www.oreilly.com/library/view/css-secrets/9781449372736/)
+
+- continuing to improve my knowledge of **web accessibility** and **design systems**
+
+🔭 I also regulary study other topics on [_Frontend Masters_](https://frontendmasters.com/u/Lowic_M/).
+
+You can contact me on [_LinkedIn_](https://www.linkedin.com/in/lowic-mangin). Good luck with your projects! 🙂
